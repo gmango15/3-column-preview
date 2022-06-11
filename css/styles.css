@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+main {   
+    max-width: 1440px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 95%);
+}
+.parent {
+    max-width: 960px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.container {
+    text-align: left;
+    padding: 40px 55px 50px 40px;
+}
+.card-container1 {
+    background-color: hsl(31, 77%, 52%);
+}
+.card-container2 {
+    background-color: hsl(184, 100%, 22%);
+}
+.card-container3 {
+    background-color: hsl(179, 100%, 13%);
+}
+h2 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 25px 0;
+}
+.text-container {
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 380px;
+}
+button {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;    
+    border-style: none;
+    margin-top: auto; 
+}
+.button1 {
+    color: hsl(31, 77%, 52%); 
+}
+.button2 {
+    color: hsl(184, 100%, 22%);
+}
+.button3 {
+    color: hsl(179, 100%, 13%);
+}
+button:hover {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer; 
+}
+@media screen and (max-width: 700px) {
+    .parent {
+        width: 320px;
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 20px;
+        border-radius: 10px;
+        overflow: hidden; 
+    }  
+    .text-container {
+        height: 280px;
+    }
+}
